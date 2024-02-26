@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Webpage with Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Main Content -->
+    <div style="display: flex; justify-content: center; padding-top: 50px;" class="container.fluid">
+        <div style="border-radius: 10px; background-color: white; display: flex; flex-direction: column; align-items: center; padding:20px" class="col-xl-3">
+            <img style="width: 60%; height:auto; border-radius: 50%;" src="me.png">
+            <h1 style="text-align: center; font-weight: 700; color: dodgerblue; margin-top:20px;">Samuel Hills</h1>
+            <h3 style="text-align: center; color:dodgerblue; margin-top:20px;"><u>Founder</u>, <u>CEO</u> and <u>BWL Student</u></h3>
+        </div>
+    </div>
+
+    <div id="projects" class="container.fluid" style="margin-top:20px; background-color: white;">
+        <h1 style="color:dodgerblue; text-align: center; margin:20px">Projects</h1>
+        <div style="margin-left:30%; margin-right:30%;" class="row">
+            <div class="col-xl-6 col-md-12">
+                <img id="lehrsharebutton" class="projImg" src="lehrshareimg.png">
+            </div>
+            <div class="col-xl-6 col-md-12">
+                <img id="zuriButton" class="projImg" src="zuriimg.png">
+            </div>
+            <div class="col-xl-6 col-md-12">
+                <img id="apibButton" class="projImg" src="klassenweb.png">
+            </div>
+            <div class="col-xl-6 col-md-12">
+                <img id="replicaButton" class="projImg" src="replicaimg.png">
+            </div>
+        </div>
+    </div>
+
+    <div style="margin:20px; margin-left:20%; margin-right: 20%;" id="experience" class="container.fluid">
+        <h1 style="text-align: center; display: flex; flex-direction: row;">Job Experience</h1>
+        <div class="row">
+            <div style="background-color:white; border-radius:10px; padding:10px" class="col-xl-12 xol-12">
+                <h1 style="color: dodgerblue;">November 2022 - October 2023</h1>
+                <h2 style="color: dodgerblue;">ZÜRI App</h2>
+                <p style="color: dodgerblue;">I began programming the ZÜRI app as my end of school project.</p>
+                <p style="color: dodgerblue;">The idea for the app came to me much like the birkin bag did for Jane Mallory Birkin, that is, on a flight from switzerland to england.</p>
+                <p style="color: dodgerblue;">The point of tha app was, to make something that would become a mor local and user friendly social media, that would also allow me to set foot in the world of programming.</p>
+                <p style="color: dodgerblue;">As I owned an iPhone at the time, I decided that I should program the app in the Swift programming language, as it is a high level language and has a fast compilation time.</p>
+                <p style="color: dodgerblue;">I managed to build a basic app within 4 and a half months, just in time to release it to the App Store, the day before the end of school presentations.</p>
+                <p style="color: dodgerblue;">Despite a first release which was full of bugs and bottlenecks which would cause the app to crash, it gained around 90 user within its first day, with students and parent alike downloading it through a QR code at my presentation stand.</p>
+                <p style="color: dodgerblue;">Over the following weeks i managed to fix all of the bugs, which caused the app to break, leaving only server errors to worsen the user experience, errors which also be fixed within the next three weeks.</p>
+                <p style="color: dodgerblue;">I managed to build a basic app within 4 and a half months, just in time to release it to the App Store, the day before the end of school presentations.</p>
+                <p style="color: dodgerblue;">In July 2023, in the canton of Zürich, the event known as "Züri Fäscht" (Zurich celecbration) took place, making the keyword "Züri" reach heights i had never expected.</p>
+                <p style="color: dodgerblue;">That along with the newly created "Züri Fäscht App", led to multiple people accidentally downloading ZÜRI, a completely unexpected amount of growth, which proved a fatal amount of traffic to the ZÜRI Servers.</p>
+                <p style="color: dodgerblue;">A next day fix however, along with an upgrade to the server plan, allowed ZÜRI to operate as usual.</p>
+            </div>
+
+            <div style="background-color:white; border-radius:10px; padding:10px; margin-top:20px;" class="col-xl-12 xol-12">
+                <h1 style="color: dodgerblue;">August 2023 - Current</h1>
+                <h2 style="color: dodgerblue;">UBS Apprenticeship</h2>
+                <p style="color: dodgerblue;">I began programming the ZÜRI app as my end of school project.</p>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lehrsharebutton = document.getElementById('lehrsharebutton');
+        const zuriButton = document.getElementById('zuriButton');
+        const apibButton = document.getElementById('apibButton');
+        const replicaButton = document.getElementById('replicaButton');
+
+        lehrsharebutton.addEventListener('click', function() {
+            window.location = 'https://lehrshare.com';
+        }) 
+        zuriButton.addEventListener('click', function() {
+            window.location = 'https://zueriinfo.wixsite.com/zueri';
+        }) 
+        apibButton.addEventListener('click', function() {
+            window.location = 'https://23-apib.hosting.it-university.ch/';
+        })
+        replicaButton.addEventListener('click', function() {
+            window.location = 'https://replicaprojectweb.web.app/';
+        }) 
+    })
+</script>
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
